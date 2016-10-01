@@ -42,7 +42,8 @@ void init_player(Player* player) {
     cout << "Enter a name for your character" << endl;
     tab();
     cout << "> ";
-    cin >> name;
+    //cin >> name;
+    getline(cin, name);
     player->set_name(name);
     new_line();
     sleep();
